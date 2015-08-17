@@ -1,7 +1,15 @@
+= javascript_include_tag 'jquery.rambling.slider'
+= stylesheet_link_tag 'jquery.rambling.slider'
 
-h1
- center 
-   |
-     B(.)(.)BS 
-div
-	
+h1.name 
+  =@qwe
+.btn
+  input type="button" onclick="document.location.reload()" value="Refrash"
+
+#slider.context
+  - @boobs.each do |b|   
+      =image_tag  b.gsub! 'public/images/', ''
+    
+
+function(){
+  ('#sliderId').ramblingSlider()

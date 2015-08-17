@@ -10,24 +10,13 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
- *= require jquery.rambling.slider
+
+
  */
+
 body {
-	background: linear-gradient(to top, #000, #fff);
+	background-color: #ff5566;
 }
-
-.btn{
-	text-align: center; 
-}
-
 .context{
-	margin-top: 20px;
 	text-align: center; 
 }
-
-h1.name{
-	text-align: center;
-}
-

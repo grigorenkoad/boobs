@@ -25,8 +25,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
+gem 'slim'
+gem "rmagick", "~> 2.13.1"
+gem 'hermitage'
+gem 'rambling-slider-rails'
+#include Magick Use Unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
@@ -44,6 +47,5 @@ group :development, :test do
   gem 'mechanize'
   gem 'pry'
   gem 'json'
-  gem 'slim'
 end
 
