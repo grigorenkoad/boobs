@@ -5,5 +5,4 @@ h1.name
 ul.pgwSlider
   - @boobs.each do |b|
     li
-      =image_tag( b.gsub! 'public/images/', '')
-    
+      =image_tag b.gsub! 'public/images/', ''  

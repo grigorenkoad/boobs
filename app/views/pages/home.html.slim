@@ -1,11 +1,9 @@
-
-h1.name 
-  =@title
-  a href="http://localhost:3000/pages/refresh" 
-    | Refresh
+=link_to "pages/refresh" 
+  h1.name 
+    =@title
+    
  
 ul.pgwSlider
   - @boobs.each do |b|
     li
       =image_tag( b.gsub! 'public/images/', '')
-    
