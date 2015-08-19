@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
+  require 'boobs_loader'
   require 'rmagick'
   require 'open-uri'
-  require 'boobs'
+  include BoobsLoader
   include Magick
 
   def home
@@ -11,7 +12,7 @@ class PagesController < ApplicationController
 
   def refresh
     @title = "B(.)(.)BS"
-    @boobs = get_img_with_rank()
+    @boobs = get_img_with_rank
   end
 
 end
