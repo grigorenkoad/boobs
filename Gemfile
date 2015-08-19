@@ -28,7 +28,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim'
 gem "rmagick", "~> 2.13.1"
 gem 'hermitage'
-gem 'rambling-slider-rails'
 #include Magick Use Unicorn as the app server
 # gem 'unicorn'
 

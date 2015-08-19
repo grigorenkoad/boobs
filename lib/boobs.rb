@@ -28,6 +28,10 @@ def get_img_with_rank
   boobs_with_rank = Dir["public/images/*.png"]
 end
 
+def get_old_img_with_rank
+  boobs_with_rank = Dir["public/images/*.png"]
+end
+
 def drow_rank
   boobs = get_img()
 
@@ -35,8 +39,8 @@ def drow_rank
       image = ImageList.new(img)
       txt = Draw.new
 
-      image.annotate(txt, 0,0,0,0, img[15..-7].to_s){
-        txt.gravity = Magick::SouthGravity
+      image.annotate(txt, 0,0,50,50, img[15..-7].to_s){
+        txt.gravity = Magick::NorthEastGravity
         txt.pointsize = 25
         txt.stroke = '#000000'
         txt.fill = '#ffffff'

@@ -1,9 +1,7 @@
 
 h1.name 
   =@title
-  a href="http://localhost:3000/pages/refresh" 
-    | Refresh
- 
+  input type="button" onclick="history.go(0)" class="button" value="Refresh"
 ul.pgwSlider
   - @boobs.each do |b|
     li

@@ -11,23 +11,56 @@
  * file per style scope.
  *
  *= require_tree .
- *= require_self
- *= require jquery.rambling.slider
+ *= require_self	
+ *= require_pgwslider
+ *= require_pgwslider.min
  */
 body {
 	background: linear-gradient(to top, #000, #fff);
-}
-
-.btn{
-	text-align: center; 
-}
-
-.context{
-	margin-top: 20px;
-	text-align: center; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 h1.name{
 	text-align: center;
+}
+
+.context {
+	margin-top: 20px;
+	float: center;
+	display: block;
+	text-align: center;
+	width: 700px;
+    height: 500px;	
+}
+
+.button{
+  background: #ca2525;
+  font-size: 14px; 
+  text-transform: uppercase; 
+  padding: 0px 20px; 
+  display: block; 
+  margin: auto; 
+  width: 200px; 
+  height: 40px; 
+  line-height: 40px; 
+  text-align: center; 
+  color: #fff; 
+  border-radius: 3px; 
+  box-shadow: 0px 5px 0px #aa2323; 
+  text-decoration:none; 
+  -webkit-transition: background .3s ease-in-out; 
+}
+ 
+
+.button:hover{
+  background: #e15656;
+}
+ 
+
+.button:active{
+  position: relative;  
+  top: 3px;  
+  box-shadow: 0px 2px 0px #aa2323;
 }
 

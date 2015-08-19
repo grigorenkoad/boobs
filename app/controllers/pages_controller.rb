@@ -5,7 +5,12 @@ class PagesController < ApplicationController
   include Magick
 
   def home
-    @qwe = "B(.)(.)BS"
+    @title = "B(.)(.)BS"
+    @boobs = get_old_img_with_rank()
+  end
+
+  def refresh
+    @title = "B(.)(.)BS"
     @boobs = get_img_with_rank()
   end
 

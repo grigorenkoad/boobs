@@ -11,5 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.rambling.slider
+//= require jquery_ujs
+//= require script
+//= require pgwslider.min
+//= require pgwslider
+
 
